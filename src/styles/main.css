@@ -1,0 +1,96 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    background-image: url(../image/wall-stitch02.png);
+    background-size: cover;
+    min-height: 100vh; /* Garante que o contêiner ocupa pelo menos a altura da janela */
+ 
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    /* background-color: #ac90b0; */
+    border-bottom: 5px solid #0d2953;
+}
+
+.panel{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+
+}
+/* Estilos gerais para quadrados */
+.square{
+    height: 150px;
+    width: 150px;
+    background-color: #ac90b0; 
+    border: 1px solid black;
+
+}
+
+.enemy{
+    background-image: url("../image/capitao-gantu3.png") ;
+    background-size: cover; /* pega a altura e largura  da caixa */
+}
+.friendly{
+    background-image: url("../image/stitch-lilo.png");
+    background-size: cover;
+}
+
+.menu-lives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2){
+    margin-top: 1rem;
+
+}
+
+/*  imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Responsividade */
+
+/* Media Query para telas menores (até 768px de largura) */
+@media screen and (max-width: 768px) {
+    .square {
+        width: 100px; /* Reduz o tamanho dos quadrados */
+        height: 100px;
+    }
+    .panel{
+        margin-top: 6rem;   
+    }
+}
+
+/* Outros estilos responsivos (adicione conforme necessário) */
+/* Por exemplo, ajuste o tamanho da fonte para telas menores */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 1rem; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
+
+
+
+
+
+
+
